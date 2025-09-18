@@ -10,11 +10,10 @@ export default function Batsman() {
 
   const handleSix = () => {
     const updatedRuns = runs + 6;
-    const updateSixes = sixes + 1;
-    setSixes(updateSixes);
+    const updateSix = sixes + 1;
+    setSixes(updateSix);
     setRuns(updatedRuns);
   };
-
   return (
     <div>
       <h3>Player : Bangla Batsman</h3>

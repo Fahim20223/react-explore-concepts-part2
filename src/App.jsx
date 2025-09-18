@@ -8,9 +8,9 @@ import Friends from "./Friends";
 import Posts from "./Posts";
 import Players from "./Players";
 
-// const fetchUsers = fetch("https://jsonplaceholder.typicode.com/users").then(
-//   (res) => res.json()
-// );
+const fetchUsers = fetch("https://jsonplaceholder.typicode.com/users").then(
+  (res) => res.json()
+);
 // const fetchFriends = async () => {
 //   const res = await fetch("https://jsonplaceholder.typicode.com/users");
 //   return res.json();
@@ -42,9 +42,9 @@ function App() {
         <Posts postsPromise={postsPromise}></Posts>
       </Suspense> */}
 
-      {/* <Suspense fallback={<h3>Loading...</h3>}>
+      <Suspense fallback={<h3>Loading...</h3>}>
         <Users fetchUsers={fetchUsers}></Users>
-      </Suspense> */}
+      </Suspense>
       {/* <Suspense fallback={<h3>Friends are coming for treat...</h3>}>
         <Friends friendsPromise={friendsPromise}></Friends>
       </Suspense> */}

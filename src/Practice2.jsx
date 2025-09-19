@@ -1,11 +1,13 @@
 import { useState } from "react";
 
 export default function Practice2() {
-  const [count, setCount] = useState("");
+  const [show, setShow] = useState("");
+
   return (
     <div>
-      <h3>Show : </h3>
-      <button>Show</button>
+      <h1>Show : </h1>
+      {show ? <p>Hi React Learner</p> : null}
+      <button onClick={() => setShow(show)}>Show</button>
       <button>Hide</button>
     </div>
   );
